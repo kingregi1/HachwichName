@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     
     var firststring = "The background color will turn blue"
     var secondstring = "The background color will turn green"
+    var registringone = 1
+    var regisstringtwo = 600
+    @IBOutlet weak var Blue: UILabel!
+    
+    @IBOutlet weak var Red: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,12 +32,22 @@ class ViewController: UIViewController {
         if firststring == "The background color will turn red" {
             
                 self.view.backgroundColor = UIColor.red
+            self.Red.text="red"
             }
         else
         {
         
                 self.view.backgroundColor = UIColor.blue
-            
+            self.Blue.text="blue"
+            }
+}
+    
+    
+    @IBAction func magicbuttonpressed(_ Sender: Any){
+        
+        if registringone > 1{
+        
+    
 }
 }
 }
